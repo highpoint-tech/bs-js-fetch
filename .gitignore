@@ -1,5 +1,7 @@
 .merlin
 src/*.js
+*.iml
+*.log
 
 .idea
 lib
