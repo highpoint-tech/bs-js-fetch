@@ -1,0 +1,5 @@
+.merlin
+src/*.js
+
+lib
+node_modules

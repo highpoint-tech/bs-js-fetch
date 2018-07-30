@@ -1,0 +1,14 @@
+{
+  "name": "bs-js-fetch",
+  "sources": [
+    {
+      "dir": "src"
+    }
+  ],
+  "refmt": 3,
+  "suffix": ".bs.js",
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  }
+}
