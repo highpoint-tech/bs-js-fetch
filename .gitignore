@@ -1,5 +1,6 @@
 .merlin
 src/*.js
 
+.idea
 lib
 node_modules
