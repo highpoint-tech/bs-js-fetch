@@ -17,8 +17,9 @@
   ],
   "scripts": {
     "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "prepublish": "npm run build",
+    "start": "bsb -make-world -w"
   },
   "peerDependencies": {
     "@highpoint/js-fetch": "^0.1.2"
