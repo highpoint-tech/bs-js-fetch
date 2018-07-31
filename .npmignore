@@ -1,7 +1,0 @@
-.merlin
-*.iml
-*.lock
-*.log
-
-.idea
-lib

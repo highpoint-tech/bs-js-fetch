@@ -2,7 +2,7 @@
   "name": "@highpoint/bs-js-fetch",
   "version": "0.1.2",
   "description": "BuckleScript bindings for HighPoint Fetch Library",
-  "main": "src/Fetch.bs.js",
+  "main": "src/Fetch.re",
   "repository": {
     "type": "git",
     "url": "git+https://github.com:hp-mobile/bs-js-fetch.git"
@@ -18,14 +18,17 @@
   "scripts": {
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
-    "prepublish": "npm run build",
     "start": "bsb -make-world -w"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@highpoint/js-fetch": "^0.1.2"
   },
   "devDependencies": {
-    "bs-platform": "^4.0.2",
-    "@highpoint/js-fetch": "^0.1.2"
-  }
+    "bs-platform": "^4.0.2"
+  },
+  "files": [
+    "src/*.re",
+    "src/*.rei",
+    "bsconfig.json"
+  ]
 }

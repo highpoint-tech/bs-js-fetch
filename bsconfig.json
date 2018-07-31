@@ -1,5 +1,5 @@
 {
-  "name": "bs-js-fetch",
+  "name": "@highpoint/bs-js-fetch",
   "sources": [
     {
       "dir": "src"
