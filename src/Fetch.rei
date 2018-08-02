@@ -28,10 +28,9 @@ module Options:
     type make;
     let make: (~body: Body.t=?, ~signal: AbortController.signal=?, unit) => make;
   };
-let json : url => result;
+  
+let json : (~url: url, ~options: Options.make=?, unit) => result;
 
-let jsonWithOptions : (url, Options.make) => result;
+let postForm : (~url: url, ~options: Options.make=?, unit) => result;
 
-let postForm : (url, Options.make) => result;
-
-let postJSON : (url, Options.make) => result;
+let postJSON : (~url: url, ~options: Options.make=?, unit) => result;

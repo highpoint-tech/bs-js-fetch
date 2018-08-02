@@ -32,12 +32,11 @@ module Options = {
   };
 };
 
-[@bs.module "@highpoint/js-fetch"] external json : url => result = "";
-
-[@bs.module "@highpoint/js-fetch"] external jsonWithOptions : (url, Options.make) => result = "json";
+[@bs.module "@highpoint/js-fetch"]
+external json : (~url: url, ~options: Options.make=?, unit) => result = "";
 
 [@bs.module "@highpoint/js-fetch"]
-external postForm : (url, Options.make) => result = "";
+external postForm : (~url: url, ~options: Options.make=?, unit) => result = "";
 
 [@bs.module "@highpoint/js-fetch"]
-external postJSON : (url, Options.make) => result = "";
+external postJSON : (~url: url, ~options: Options.make=?, unit) => result = "";
