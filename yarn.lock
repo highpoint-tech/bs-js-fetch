@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@highpoint/js-fetch@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-0.1.2.tgz#8feb7af114fc4203ec7712e3647f8c0d6c7e1b3e"
+"@highpoint/js-fetch@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-0.1.3.tgz#3479876b3656c8bdff2f65a248478ec9823682e7"
 
 bs-platform@^4.0.2:
   version "4.0.2"

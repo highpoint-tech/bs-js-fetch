@@ -1,5 +1,14 @@
-type url = string; 
+type url = string;
+
 type result = Js.Promise.t(Js.Json.t);
+
+module AbortController = {
+  type t;
+  type signal;
+  [@bs.get] external signal : t => signal = "";
+  [@bs.send] external abort : (t, unit) => unit = "";
+  [@bs.new] external make : unit => t = "AbortController";
+};
 
 module Options = {
   module Body = {
@@ -15,10 +24,17 @@ module Options = {
     external makeWithUrlSearchParams : urlSearchParams => t = "%identity";
   };
   [@bs.deriving abstract]
-  type make = {body: Body.t};
+  type make = {
+    [@bs.optional]
+    body: Body.t,
+    [@bs.optional]
+    signal: AbortController.signal,
+  };
 };
 
 [@bs.module "@highpoint/js-fetch"] external json : url => result = "";
+
+[@bs.module "@highpoint/js-fetch"] external jsonWithOptions : (url, Options.make) => result = "json";
 
 [@bs.module "@highpoint/js-fetch"]
 external postForm : (url, Options.make) => result = "";
