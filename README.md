@@ -1,6 +1,6 @@
 # bs-js-fetch
 
-[BuckleScript](https://github.com/bloomberg/bucklescript) bindings for Highpoint's [js-fetch](https://github.com/hp-mobile/js-fetch).
+[BuckleScript](https://github.com/bloomberg/bucklescript) bindings for HighPoint's [js-fetch](https://github.com/hp-mobile/js-fetch).
 
 ### Pre-requisites
 
