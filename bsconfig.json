@@ -1,14 +1,19 @@
 {
   "name": "@highpoint/bs-js-fetch",
+  "bs-dev-dependencies": ["bs-tape"],
   "sources": [
     {
       "dir": "src"
+    }, 
+    {
+      "dir": "tests",
+      "type": "dev"
     }
   ],
   "refmt": 3,
   "suffix": ".bs.js",
   "package-specs": {
-    "module": "es6",
+    "module": "commonjs",
     "in-source": true
   }
 }

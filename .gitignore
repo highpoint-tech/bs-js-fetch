@@ -1,5 +1,6 @@
 .merlin
 src/*.js
+tests/*.js
 
 .idea
 lib
