@@ -12,7 +12,7 @@
 yarn add @highpoint/bs-js-fetch 
 ```
 
-In your `bsconfig.json`, include `"@hightpoint/bs-js-fetch"` in the `bs-dependencies`.
+In your `bsconfig.json`, include `"@highpoint/bs-js-fetch"` in the `bs-dependencies`.
 
 
 
