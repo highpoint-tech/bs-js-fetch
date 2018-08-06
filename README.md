@@ -19,22 +19,24 @@ In your `bsconfig.json`, include `"@highpoint/bs-js-fetch"` in the `bs-dependenc
 ### Usage
 
 ```reason
-Fetch.json("http://google.com")
+open Fetch;
+
+json(~url="http://google.com", ())
 |> Js.Promise.then_(result => /* do something with `result` */ );
 
-Fetch.(
-  postForm(
-    "schedule-builder",
-    Options.(make(~body=Body.make("key1=value1&key2=value2"))),
-  )
-  |> Js.Promise.then_(result => /* do something with `result` */ )
-);
+let abortController = AbortController.make();
 
-Fetch.(
-  postJSON(
-    "message-center",
-    Options.(make(~body=Body.makeWithUrlSearchParams(urlSearchParams))),
-  )
-  |> Js.Promise.then_(result => /* do something with `result` */ )
-);
+postForm(
+  ~url="schedule-builder",
+  ~options=Options.(make(~body=Body.make("key1=value1&key2=value2", ~signal=(abortController |> AbortController.signal), ()))),
+  ()
+)
+|> Js.Promise.then_(result => /* do something with `result` */ )
+
+postJSON(
+  ~url="message-center",
+  ~options=Options.(make(~body=Body.makeWithUrlSearchParams(urlSearchParams), ())),
+  ()
+)
+|> Js.Promise.then_(result => /* do something with `result` */ )
 ```
