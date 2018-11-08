@@ -20,7 +20,7 @@
     "clean": "bsb -clean-world",
     "start": "bsb -make-world -w",
     "pretest": "rimraf tests/main.bs.js && yarn build && prepend tests/main.bs.js \"require('abortcontroller-polyfill/dist/abortcontroller-polyfill-only');require('@babel/polyfill');\n\"",
-    "test": "browserify tests/main.bs.js --plugin esmify | tape-run --render faucet"
+    "test": "browserify tests/main.bs.js --plugin esmify | tape-run"
   },
   "dependencies": {
     "@highpoint/js-fetch": "^2.0.1"
@@ -32,7 +32,6 @@
     "bs-platform": "^4.0.2",
     "bs-tape": "^0.3.0",
     "esmify": "^2.0.0",
-    "faucet": "^0.0.1",
     "prepend-file-cli": "^1.0.6",
     "rimraf": "^2.6.2",
     "tape-run": "^4.0.0"
