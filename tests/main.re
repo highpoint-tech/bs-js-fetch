@@ -14,14 +14,18 @@ let payload = Js.Dict.empty();
 
 Js.Dict.set(payload, "hello", Js.Json.string("world"));
 
-let body = Options.Body.make(Js.Json.stringify(Js.Json.object_(payload)));
+let body = Options.Body.make(Js.Json.object_(payload));
 
-let signal = AbortController.make() |. AbortController.signal;
+let signal = AbortController.make()->AbortController.signal;
 
-let test = (name, fn) => test(name, t => {
-  t.plan(1);
-  fn(() => t.pass("success"));
-});
+let test = (name, fn) =>
+  test(
+    name,
+    t => {
+      t.plan(1);
+      fn(() => t.pass("success"));
+    },
+  );
 
 test("`json` works with url", endTest =>
   json(~url=getUrl, ()) |> then_(_result => endTest() |> resolve) |> ignore
@@ -40,7 +44,9 @@ test("`json` works with url and signal", endTest =>
 );
 
 test("`postJSON` works with url", endTest =>
-  postJSON(~url=postUrl, ()) |> then_(_result => endTest() |> resolve) |> ignore
+  postJSON(~url=postUrl, ())
+  |> then_(_result => endTest() |> resolve)
+  |> ignore
 );
 
 test("`postJSON` works with url and body", endTest =>
@@ -56,7 +62,9 @@ test("`postJSON` works with url, body and signal", endTest =>
 );
 
 test("`postForm` works with url", endTest =>
-  postForm(~url=postUrl, ()) |> then_(_result => endTest() |> resolve) |> ignore
+  postForm(~url=postUrl, ())
+  |> then_(_result => endTest() |> resolve)
+  |> ignore
 );
 
 test("`postForm` works with url and body", endTest =>

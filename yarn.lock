@@ -190,9 +190,9 @@
     to-fast-properties "^2.0.0"
 
 "@highpoint/js-fetch@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-2.0.1.tgz#e19d55dfeecafc778fe805dd5c500b0eb0f16b51"
-  integrity sha512-s0Tm8LS3/NXt91zeqq4hmcmrm2KXAvl8+9X1/QANFU4UYsA62vclj6EoTqTTyORfnkuVKRl2BOxJjTRCjjx5hQ==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-2.1.0.tgz#3ac537cc689e3efd321a3529c6839d80c3ec63fa"
+  integrity sha512-qHfobKaFqBL30iPoaX5/Y4UzWp74uwiHcAeU3Vh9bCLn2JLI2WMP8q44nvuGdRb6LJ38S549b3h/Ed+DHmkR8g==
 
 "@juliangruber/tap-finished@0.0.2":
   version "0.0.2"
