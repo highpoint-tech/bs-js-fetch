@@ -23,7 +23,7 @@
     "test": "browserify tests/main.bs.js --plugin esmify | tape-run"
   },
   "dependencies": {
-    "@highpoint/js-fetch": "^2.0.1"
+    "@highpoint/js-fetch": "^2.1.0"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.0.0",

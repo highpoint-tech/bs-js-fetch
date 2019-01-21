@@ -189,7 +189,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@highpoint/js-fetch@^2.0.1":
+"@highpoint/js-fetch@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-2.1.0.tgz#3ac537cc689e3efd321a3529c6839d80c3ec63fa"
   integrity sha512-qHfobKaFqBL30iPoaX5/Y4UzWp74uwiHcAeU3Vh9bCLn2JLI2WMP8q44nvuGdRb6LJ38S549b3h/Ed+DHmkR8g==
