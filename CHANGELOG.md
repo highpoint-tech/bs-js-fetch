@@ -1,3 +1,7 @@
+# v0.5.0
+
+- ensure latest js-fetch is used
+
 # v0.4.0
 
 - bump js-fetch
