@@ -5,7 +5,7 @@
   "main": "src/Fetch.re",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:hp-mobile/bs-js-fetch.git"
+    "url": "git+https://github.com:highpoint-tech/bs-js-fetch.git"
   },
   "author": "HighPoint <support@mhighpoint.com>",
   "license": "MIT",
