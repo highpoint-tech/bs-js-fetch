@@ -156,6 +156,13 @@
     core-js "^2.5.7"
     regenerator-runtime "^0.11.1"
 
+"@babel/runtime@^7.8.3":
+  version "7.9.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
+  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.1.0", "@babel/template@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.1.2.tgz#090484a574fef5a2d2d7726a674eceda5c5b5644"
@@ -189,10 +196,12 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@highpoint/js-fetch@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-2.1.0.tgz#3ac537cc689e3efd321a3529c6839d80c3ec63fa"
-  integrity sha512-qHfobKaFqBL30iPoaX5/Y4UzWp74uwiHcAeU3Vh9bCLn2JLI2WMP8q44nvuGdRb6LJ38S549b3h/Ed+DHmkR8g==
+"@highpoint/js-fetch@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-3.0.0.tgz#e5e8158f01e8ddebf83b9192cbbd2a06daa38d58"
+  integrity sha512-AEL21G1jrkamXcfyLZj8Qic2FnIphSnxBeHOaagy5ihFjMC9icfhr5qbUdjZZznAnoz2cBsGMRy5x7zx27O1Bg==
+  dependencies:
+    "@babel/runtime" "^7.8.3"
 
 "@juliangruber/tap-finished@0.0.2":
   version "0.0.2"
@@ -2220,6 +2229,11 @@ regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
+
+regenerator-runtime@^0.13.4:
+  version "0.13.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.5.tgz#d878a1d094b4306d10b9096484b33ebd55e26697"
+  integrity sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
 
 repeating@^2.0.0:
   version "2.0.1"
