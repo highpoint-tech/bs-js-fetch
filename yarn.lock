@@ -196,10 +196,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@highpoint/js-fetch@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-3.0.0.tgz#e5e8158f01e8ddebf83b9192cbbd2a06daa38d58"
-  integrity sha512-AEL21G1jrkamXcfyLZj8Qic2FnIphSnxBeHOaagy5ihFjMC9icfhr5qbUdjZZznAnoz2cBsGMRy5x7zx27O1Bg==
+"@highpoint/js-fetch@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@highpoint/js-fetch/-/js-fetch-4.0.2.tgz#3687752bf3fd1bb93853d33b2756b3019767a265"
+  integrity sha512-huFN2lNF3wP+gIo3bHvSd5mUyncim2qzJzWX3YRTGn0Qnw+qswID/2bN9y0vkGnZgIOuIrTZHN1SYQg3xTVwow==
   dependencies:
     "@babel/runtime" "^7.8.3"
 

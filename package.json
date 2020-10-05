@@ -1,6 +1,6 @@
 {
   "name": "@highpoint/bs-js-fetch",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "BuckleScript bindings for HighPoint Fetch Library",
   "main": "src/Fetch.re",
   "repository": {
@@ -23,7 +23,7 @@
     "test": "browserify tests/main.bs.js --plugin esmify | tape-run"
   },
   "dependencies": {
-    "@highpoint/js-fetch": "^3.0.0"
+    "@highpoint/js-fetch": "^4.0.2"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.0.0",
